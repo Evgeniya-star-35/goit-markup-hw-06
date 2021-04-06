@@ -606,6 +606,10 @@ header {
   margin-right: 30px;
   flex-basis: calc((50% - 45px) / 2);
 }
+.web-item-three {
+  display: block;
+  flex-basis: calc(50%-15px);
+}
 
 .logo-footer {
   display: block;
