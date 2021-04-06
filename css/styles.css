@@ -607,6 +607,9 @@ header {
 }
 
 .card-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -623,8 +626,9 @@ header {
   transform: translatey(0);
 }
 .text-overlay {
-  padding: 63px 24px;
+  width: 322px;
   margin: 0;
+
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
