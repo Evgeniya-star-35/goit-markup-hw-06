@@ -119,9 +119,9 @@ header {
 .site-nav .link-studio::after {
   position: absolute;
   content: '';
-  display: block;
-  margin-top: 28px;
-  width: 48px;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
@@ -136,9 +136,9 @@ header {
 .site-nav .portfolio::after {
   position: absolute;
   content: '';
-  display: block;
-  margin-top: 28px;
-  width: 78px;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
@@ -271,7 +271,6 @@ header {
   left: 0;
   opacity: 1;
   transition: opasity 250ms var(--timing-function);
-  z-index: 2;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
