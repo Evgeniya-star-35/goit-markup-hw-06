@@ -265,56 +265,6 @@ header {
   color: var(--button-hero-text-color);
   background-color: #188ce8;
 }
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  transition: opasity 250ms var(--timing-function);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-  opacity: 0;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  min-width: 528px;
-  min-height: 581px;
-  background-color: var(--primery-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms var(--timing-function) opasity 250ms
-    var(--timing-function);
-}
-.modal-close {
-  position: absolute;
-  cursor: pointer;
-  right: 8px;
-  top: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.close {
-  width: 100%;
-  height: 100%;
-}
 
 /*преимущества*/
 
@@ -628,7 +578,6 @@ header {
 .text-overlay {
   width: 322px;
   margin: 0;
-
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -735,4 +684,57 @@ header {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opasity 250ms var(--timing-function);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--primery-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms var(--timing-function) opasity 250ms
+    var(--timing-function);
+}
+.modal-close {
+  position: absolute;
+  cursor: pointer;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close {
+  width: 100%;
+  height: 100%;
+}
+textarea {
+  resize: none;
 }
