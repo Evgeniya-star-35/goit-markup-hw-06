@@ -647,10 +647,6 @@
             <div class="footer-input">
               <input class="" type="email" placeholder="E-mail" />
               <button class="button-footer" type="submit">Подписаться</button>
-
-              <svg width="24" height="24" aria-label="telegram">
-                <use href=".images/sprite.svg#icon-send"></use>
-              </svg>
             </div>
           </div>
         </div>
@@ -669,47 +665,30 @@
             <label for="name" class="form-label">Имя</label>
 
             <input class="form-input" type="text" name="user-name" id="name" />
-            <span class="icon icon-man"
-              ><svg width="12" height="12">
-                <use href="./images/sprite.svg#icon-man"></use>
-              </svg>
-            </span>
+            <svg class="icon icon-name" aria-label="Ваше имя">
+              <use href="./images/sprite.svg#icon-man"></use>
+            </svg>
           </div>
           <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
-            <input
-              class="form-input"
-              type="tel"
-              name="tel"
-              id="tel"
-              autocomplete="on"
-            />
-            <span class="icon icon-tell"
-              ><svg width="13" height="13">
-                <use href="./images/sprite.svg#icon-tell"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="mail">Почта</label>
+            <label for="tel">Телефон</label>
 
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              id="mail"
-              autocomplete="on"
-            />
-            <span class="icon icon-mail"
-              ><svg width="15" height="12">
-                <use href="./images/sprite.svg#icon-email-black"></use>
-              </svg>
-            </span>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+            <svg class="icon icon-tell" aria-label="Телефон">
+              <use href="./images/sprite.svg#icon-tell"></use>
+            </svg>
           </div>
-          <div class="">
-            <label class="form-label" for="comment">Комментарий</label>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+
+            <input class="form-input" type="email" name="email" id="mail" />
+            <svg class="icon icon-mail" aria-label="Электронная почта">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
             <textarea
-              class="form-input text-input"
+              class="modal-texteria"
               name="comment"
               id="comment"
               rows="10"
