@@ -646,14 +646,11 @@
 
             <div class="footer-input">
               <input class="" type="email" placeholder="E-mail" />
-              <button class="button-footer" type="submit">
-                Подписаться
-                <span
-                  ><svg class="icon-send" width="13" height="13">
-                    <use href=".images/sprite.svg#icon-send"></use>
-                  </svg>
-                </span>
-              </button>
+              <button class="button-footer" type="submit">Подписаться</button>
+
+              <svg width="24" height="24" aria-label="telegram">
+                <use href=".images/sprite.svg#icon-send"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -666,18 +663,12 @@
             <use href="./images/sprite.svg#icon-close-black1"></use>
           </svg>
         </button>
-        <b class="modal-join">Оставьте свои данные, мы вам перезвоним</b>
         <form class="form">
+          <b class="modal-join">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-field">
-            <label class="text-label" for="name">Имя</label>
+            <label for="name" class="form-label">Имя</label>
 
-            <input
-              class="form-input"
-              type="text"
-              name="user-name"
-              id="name"
-              placeholder=" "
-            />
+            <input class="form-input" type="text" name="user-name" id="name" />
             <span class="icon icon-man"
               ><svg width="12" height="12">
                 <use href="./images/sprite.svg#icon-man"></use>
@@ -685,13 +676,13 @@
             </span>
           </div>
           <div class="form-field">
-            <label class="text-label" for="tel">Телефон</label>
+            <label class="form-label" for="tel">Телефон</label>
             <input
               class="form-input"
               type="tel"
               name="tel"
               id="tel"
-              placeholder=" "
+              autocomplete="on"
             />
             <span class="icon icon-tell"
               ><svg width="13" height="13">
@@ -700,14 +691,14 @@
             </span>
           </div>
           <div class="form-field">
-            <label class="text-label" for="mail">Почта</label>
+            <label class="form-label" for="mail">Почта</label>
 
             <input
               class="form-input"
               type="email"
               name="email"
               id="mail"
-              placeholder=" "
+              autocomplete="on"
             />
             <span class="icon icon-mail"
               ><svg width="15" height="12">
@@ -715,19 +706,24 @@
               </svg>
             </span>
           </div>
+          <div class="">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea
+              class="form-input text-input"
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input class="checkbox" type="checkbox" name="policy" id="policy" />
+            <label class="text-policy" for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="link-policy">Условия договора</a></label
+            >
+          </div>
 
-          <label class="" for="comment">Комментарий</label>
-          <textarea
-            name="comment"
-            id="comment"
-            rows="10"
-            placeholder="Введите текст"
-          ></textarea>
-          <input class="" type="checkbox" name="policy" id="policy" />
-          <label class="" for="policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="" class="link-policy">Условия договора</a></label
-          >
           <button type="submit" class="modal-button">Отправить</button>
         </form>
       </div>
