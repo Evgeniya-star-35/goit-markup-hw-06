@@ -14,6 +14,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -66,7 +70,9 @@
       <!--Герой-->
 
       <section class="section-hero overlay">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title animate__backInDown">
+          Эффективные решения для вашего бизнеса
+        </h1>
         <button data-modal-open type="button" class="hero-button">
           Заказать услугу
         </button>
@@ -139,7 +145,7 @@
                 alt="Команда создает десктопное приложение"
                 width="370"
                 height="294"
-                class="img"
+                class="img animate__bounceInRight"
               />
               <div class="app">
                 <h3 class="business-title">Десктопные приложения</h3>
@@ -151,7 +157,7 @@
                 alt="Команда создает мобильное приложение"
                 width="370"
                 height="294"
-                class="img"
+                class="img animate__bounceInRight"
               />
               <div class="app">
                 <h3 class="business-title">Мобильные приложения</h3>
@@ -163,7 +169,7 @@
                 alt="Дизайнерские решения"
                 width="370"
                 height="294"
-                class="img"
+                class="img animate__bounceInRight"
               />
               <div class="app">
                 <h3 class="business-title">Дизайнерские решения</h3>
@@ -582,7 +588,7 @@
               </ul>
             </address>
           </div>
-          <div class="web-item-two">
+          <div class="web-item-two animate__zoomInDown">
             <b class="join">присоединяйтесь</b>
             <ul class="list footer-social">
               <li class="footer-social-item">
@@ -639,19 +645,28 @@
               </li>
             </ul>
           </div>
+
           <div class="web-item-three">
-            <div class="footer-label">
-              <label class="join">Подпишитесь на рассылку</label>
-            </div>
-            <div class="footer-input">
-              <input class="text-email" type="email" placeholder="E-mail" />
-              <button class="button-footer" type="submit">
-                Подписаться
-                <svg class="icon-send" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-sendteleg"></use>
-                </svg>
-              </button>
-            </div>
+            <form class="footer-form" name="form" autocomplete="on">
+              <b class="join">Подпишитесь на рассылку</b>
+              <div class="input-form">
+                <label class="footer-label">
+                  <input
+                    class="footer-input text-email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+
+                <button class="button-footer" type="submit">
+                  <span class="text-button-footer">Подписаться</span>
+                  <svg class="icon-send" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-sendteleg"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -690,18 +705,24 @@
             </svg>
           </div>
           <div class="form-field">
-            <label for="comment">Комментарий</label>
-            <textarea
-              class="modal-texteria"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Введите текст"
-            ></textarea>
+            <label for="comment"
+              >Комментарий
+              <textarea
+                class="modal-textarea"
+                name="comment"
+                placeholder="Введите текст"
+                id="comment"
+                rows="10"
+              ></textarea>
+            </label>
           </div>
           <div class="modal-checkbox">
             <label class="label-checkbox">
-              <input class="checkbox" type="checkbox" name="policy" />
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="policy"
+              />
               <span class="icon-checkbox"> </span>
               Соглашаюсь с рассылкой и принимаю
 
