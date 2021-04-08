@@ -645,8 +645,13 @@
             </div>
 
             <div class="footer-input">
-              <input class="" type="email" placeholder="E-mail" />
-              <button class="button-footer" type="submit">Подписаться</button>
+              <input class="text-email" type="email" placeholder="E-mail" />
+              <button class="button-footer" type="submit">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href=".images/send.svg"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -655,7 +660,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close">
-          <svg width="13" height="13" aria-label="close" class="close">
+          <svg width="18" height="18" aria-label="close" class="close">
             <use href="./images/sprite.svg#icon-close-black1"></use>
           </svg>
         </button>
@@ -696,13 +701,18 @@
             ></textarea>
           </div>
           <div class="modal-checkbox">
-            <input class="checkbox" type="checkbox" name="policy" id="policy" />
-            <label class="text-policy" for="policy"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="link-policy">Условия договора</a></label
+            <input class="checkbox" type="checkbox" name="policy" id="box" />
+
+            <svg class="icon-checkbox">
+              <use href=".images/sprite.svg#icon-galochka"></use>
+            </svg>
+
+            <label for="box" class="label-checkbox">
+              Соглашаюсь с рассылкой и принимаю
+
+              <a href="" class="link-checkbox">Условия договора</a></label
             >
           </div>
-
           <button type="submit" class="modal-button">Отправить</button>
         </form>
       </div>
