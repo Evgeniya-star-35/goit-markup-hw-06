@@ -955,16 +955,13 @@ header {
 .button-footer {
   display: flex;
   align-items: center;
-  text-align: center;
   width: 200px;
   margin: 0;
   padding: 10px 28px;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--primery-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   cursor: pointer;
   transition-property: background-color;
