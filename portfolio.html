@@ -368,7 +368,7 @@
               </ul>
             </address>
           </div>
-          <div class="web-item-two">
+          <div class="web-item-two animate__zoomInDown">
             <b class="join">присоединяйтесь</b>
             <ul class="list footer-social">
               <li class="footer-social-item">
@@ -402,18 +402,26 @@
             </ul>
           </div>
           <div class="web-item-three">
-            <div class="footer-label">
-              <label class="join">Подпишитесь на рассылку</label>
-            </div>
-            <div class="footer-input">
-              <input class="text-email" type="email" placeholder="E-mail" />
-              <button class="button-footer" type="submit">
-                Подписаться
-                <svg class="icon-send" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-sendteleg"></use>
-                </svg>
-              </button>
-            </div>
+            <form class="footer-form" name="form" autocomplete="on">
+              <b class="join">Подпишитесь на рассылку</b>
+              <div class="input-form">
+                <label class="footer-label">
+                  <input
+                    class="footer-input text-email"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+
+                <button class="button-footer" type="submit">
+                  <span class="text-button-footer">Подписаться</span>
+                  <svg class="icon-send" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-sendteleg"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
