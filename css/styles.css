@@ -609,14 +609,14 @@ header {
   top: 0;
   left: 0;
   transform: translatey(100%);
-  background: rgba(33, 150, 243, 0.9);
-  transition-property: transform;
+  transition-property: transform background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
 .card-link:hover .card-overlay,
 .card-link:focus .card-overlay {
   transform: translatey(0);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .text-overlay {
