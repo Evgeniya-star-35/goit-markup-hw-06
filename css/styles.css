@@ -244,18 +244,18 @@ header {
 }
 .animate__backInDown {
   animation-name: backInDown;
-  animation-duration: 250ms;
+  animation-duration: 2500ms;
   animation-timing-function: var(--timing-function);
   animation-delay: 200ms;
   animation-direction: alternate;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 .animate__zoomInDown {
   animation-name: zoomInDown;
-  animation-duration: 250ms;
+  animation-duration: 2500ms;
   animation-timing-function: var(--timing-function);
-  animation-delay: 200ms;
-  animation-iteration-count: 1;
+  animation-delay: 2000ms;
+  animation-iteration-count: 3;
 }
 .hero-button {
   cursor: pointer;
@@ -354,11 +354,11 @@ header {
 }
 .animate__bounceInRight {
   animation-name: bounceInRight;
-  animation-duration: 250ms;
+  animation-duration: 2500ms;
   animation-timing-function: var(--timing-function);
   animation-delay: 150ms;
   animation-direction: alternate;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
 }
 
 .app {
