@@ -681,32 +681,45 @@
         <form class="form">
           <b class="modal-join">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-field">
-            <label for="name" class="form-label">Имя</label>
-
-            <input class="form-input" type="text" name="user-name" id="name" />
-            <svg class="icon icon-name" aria-label="Ваше имя">
-              <use href="./images/sprite.svg#icon-man"></use>
-            </svg>
+            <label for="name">
+              <span class="form-label">Имя</span>
+            </label>
+            <div class="modal-input">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="name"
+              />
+              <svg class="icon icon-name" aria-label="Ваше имя">
+                <use href="./images/sprite.svg#icon-man"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
-            <label for="tel">Телефон</label>
-
-            <input class="form-input" type="tel" name="tel" id="tel" />
-            <svg class="icon icon-tell" aria-label="Телефон">
-              <use href="./images/sprite.svg#icon-tell"></use>
-            </svg>
+            <label for="tel">
+              <span class="form-label">Телефон</span>
+            </label>
+            <div class="modal-input">
+              <input class="form-input" type="tel" name="tel" id="tel" />
+              <svg class="icon icon-tell" aria-label="Телефон">
+                <use href="./images/sprite.svg#icon-tell"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
-            <label for="mail">Почта</label>
-
-            <input class="form-input" type="email" name="email" id="mail" />
-            <svg class="icon icon-mail" aria-label="Электронная почта">
-              <use href="./images/sprite.svg#icon-mail"></use>
-            </svg>
+            <label for="mail"> <span class="form-label">Почта</span></label>
+            <div class="modal-input">
+              <input class="form-input" type="email" name="email" id="mail" />
+              <svg class="icon icon-mail" aria-label="Электронная почта">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
-            <label>
-              Комментарий
+            <label
+              ><span class="form-label">Комментарий</span>
+
               <textarea
                 class="modal-textarea"
                 name="comment"
@@ -722,12 +735,10 @@
                 type="checkbox"
                 name="policy"
               />
-              <span class="icon-checkbox"> </span>
-              Соглашаюсь с рассылкой и принимаю
+              <span class="icon-checkbox"></span>
+              Соглашаюсь с рассылкой и принимаю &nbsp;
 
-              <a href="" class="link-checkbox"
-                ><span> Условия договора</span></a
-              >
+              <a href="" class="link-checkbox"> Условия договора</a>
             </label>
           </div>
           <button type="submit" class="modal-button">Отправить</button>

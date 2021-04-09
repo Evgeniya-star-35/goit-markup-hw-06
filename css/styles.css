@@ -805,11 +805,17 @@ header {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.form-field {
+.modal-input {
   position: relative;
+  margin-bottom: 10px;
 }
-
-.form-field label {
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.form-label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17px;
@@ -820,7 +826,6 @@ header {
 .form-input {
   width: 100%;
   margin: 0;
-  margin-bottom: 10px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 40px;
@@ -836,13 +841,7 @@ header {
   outline: none;
   border-color: var(--accent-color);
 }
-.icon {
-  position: absolute;
-  top: 46%;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-}
+
 .icon-tell {
   width: 13px;
   height: 13px;
@@ -878,6 +877,7 @@ header {
 
 .modal-checkbox {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -896,6 +896,7 @@ header {
 }
 .icon-checkbox {
   display: inline-block;
+  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 8.38px;
